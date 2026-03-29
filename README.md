@@ -6,19 +6,49 @@ Baixa vídeos/áudios do FreeReels sem marca d'água em qualidade original.
 Bypass automático via API interna não documentada.
             
 Instalação e Uso (5 minutos)
-bash
 
-# 1. Instala dependências
+1: git clone https://github.com/edsonbvrr2025-max/FreeReels-Downloader-Pro-v1.0.git
+
+2 : cd FreeReels-Downloader-Pro-v1.0
+
+✅ Faça um comando por vez (passo a passo)
+
+sudo apt install -y python3 
+
+✅ Instalar suporte a venv (uma vez só)
+
+ apt install python3-venv -y
+
+✅ Criar o ambiente virtual
+
+python3 -m venv venv
+
+✅ Ativar o ambiente
+
+source venv/bin/activate
+
+👉 Vai aparecer assim:
+
+(venv) root㉿
+
+✅ Instalar requests
+
+pip install requests
+
+# ✅ Instalar dependências
+
 pip install requests rich yt-dlp
 
-# 2. Salva script como freereels_dl.py
+# ✅ Uso
 
-# 3. Uso
-python freereels_dl.py "https://freereels.app/reel/abc123XYZ"
+python freereels_dl.py "link_do_video_que_quer_baixar"
 
-# Opções
+# ✅ Opções
+
 python freereels_dl.py "link_aqui" -o /minha/pasta
+
 Funcionalidades Profissionais:
+
 ✅ 100% sem marca d'água - Bypass via API interna
 ✅ HD Original - Qualidade máxima sem compressão
 ✅ Vídeo + Áudio separado
